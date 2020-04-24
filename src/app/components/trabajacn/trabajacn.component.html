@@ -1,0 +1,49 @@
+<div align="center">
+  <img src="assets/img/slider_trabajaconnosotros.jpg" class="img-fluid" > 
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1><span class="text-center titulon">TRABAJA CON </span><span class="text-center titulor">NOSOTROS</span></h1>
+  <p></p>
+  <table class="tablespace">
+     <tr>
+       <td>
+         <div>
+           <div class="fusion-text">
+             <blockquote>
+               <body>
+                 Se parte de nuestro equipo, te ofrecemos un ambiente retador basado en <br>
+                 nuestra cultura donde podrás iniciar tu vida profesional o consolidarla .<br>
+                 Creemos y estamos convencidos que una empresa se hace de buenas<br>
+                 personas basado en sus valores y la pasión por lo que hacen.<br>
+                 <br>
+               </body>
+               <body>
+               Te invitamos a asumir el reto de ser parte de nuestro equipo donde<br>
+               tendrás oportunidades y muchos retos, podrás experimentar con nuevas<br>
+               tecnologías y tener mentorias con expertos.<br>
+               <br>
+             </body>
+             <body>Acompañanos...</body>
+             </blockquote>
+           </div>
+         </div>
+       </td>
+       <td>
+         <form id="contact-form" class="img-fluid" (ngSubmit)="contactForm(form.value)" #form="ngForm" method="post">
+           <input class="form-control" id="name-input" style="width: 300px;" type="text" name="name" placeholder="Nombre" ngModel>
+           <p > </p>
+           <input class="form-control" id="phone-input" style="width: 300px;" type="text" name="phone" placeholder="Telefono" ngModel>
+           <p > </p>
+           <input class="form-control" id="email-input" style="width: 300px;" type="text" name="email" placeholder="E-mail" ngModel>
+           <p></p>
+           <textarea class="form-control" id="description-input" style="width:500px" rows="6" name="desc" placeholder="Mensaje..." ngModel></textarea>
+           <p></p>
+           <button type="submit" class="btn btn-primary">Enviar</button>
+         </form>
+       </td>
+     </tr>
+  </table>
+  <p></p>
+ </div>

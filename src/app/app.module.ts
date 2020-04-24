@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule,NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule,} from '@angular/core';
 import { app_routing } from "./app.routes";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +12,16 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { HomeComponent } from './components/home/home.component';
 import { CoolturaComponent } from './components/cooltura/cooltura.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
+import { ContactoComponent } from './components/login/contacto.component';
+import { TrabajacnComponent } from './components/trabajacn/trabajacn.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MessageService } from './services/message.service';
+import { AnclajeComponent } from './components/anclaje/anclaje.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ResetPassComponent } from './components/reset-pass/reset-pass.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -22,7 +32,15 @@ import { EquipoComponent } from './components/equipo/equipo.component';
     ServiciosComponent,
     HomeComponent,
     CoolturaComponent,
-    EquipoComponent
+    EquipoComponent,
+    BlogComponent,
+    ClientesComponent,
+    ContactoComponent,
+    TrabajacnComponent,
+    AnclajeComponent,
+    RegisterComponent,
+    ResetPassComponent,
+    LoginComponent
     
   ],
   imports: [
@@ -31,15 +49,17 @@ import { EquipoComponent } from './components/equipo/equipo.component';
     MatInputModule,
     MatButtonModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
-    app_routing
+    app_routing,
+    HttpClientModule,
+    FormsModule
     
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
-  ]
+  exports: [
+    RegisterComponent,
+    ResetPassComponent,
+    LoginComponent
+  ],
+  providers: [MessageService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

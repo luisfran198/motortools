@@ -1,8 +1,11 @@
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-  <img src="assets/img/logo.png " width="180" height="61" > 
+
+ <nav class="navbar navbar-expand-lg navbar-light main-header  ">
+    <div style="padding-left: 150px;" >
+  <img src="assets/img/logo2.jpg   "  width="170" height="50"  [routerLink]="['home']" > 
+
+</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +20,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
             <a class="dropdown-item" href="#cooltura">COOLTURA</a>
-            <a class="dropdown-item" href="#equipo">EQUIPO</a>
+            <a class="dropdown-item" [routerLink]="['equipo']">EQUIPO</a>
            
             
    </div>      
@@ -29,28 +32,20 @@
           <a class="nav-link"[routerLink]="['clientes']">CLIENTES</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link " [routerLink]="['blog']">BLOG</a>
-        </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#trabajacn">TRABAJA CON NOSOTROS</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contacto">CONTACTO</a>
+          <a class="nav-link" href="#login">LOGIN</a>
         </li>
       
-      </ul>
-    
-   
-       
+      </ul> 
 </div>
- 
   </nav>
 
 
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+  <!--<div id="copyright" class="copyr">Copyright&copy; 2020 - UCSS | Todos los derechos reservados</div>-->
   
-

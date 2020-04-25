@@ -1,19 +1,48 @@
 <body class="imagen1">
     <div class="login-box">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <img class="avatar" src="assets/img/iconol.png" alt="logo de login">
       <h1>Registrate</h1>
       <form>
-        <label for="correo_cli">Correo</label>
-        <input type="text" placeholder="Ingrese Correo">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="nom_cli">Nombre</label>
+            <input type="text" placeholder="Ingrese Nombre">
 
-        <label for="usuario_cli">Username</label>
-        <input type="text" placeholder="Ingrese Nickname">
+            <label for="apepat_cli">Apellido Paterno</label>
+            <input type="text" placeholder="Ingrese Apellido Paterno">
 
-        <label for="clave_cli">Password</label>
-        <input type="password" placeholder="Ingrese Password">
+            <label for="apemat_cli">Apellido Materno</label>
+            <input type="text" placeholder="Ingrese Apellido Materno">
 
+            <label for="dni_cli">DNI</label>
+            <input type="text" placeholder="Ingrese DNI">
+          </div>
+
+          <div class="col-md-6">
+            <label for="correo_cli">Correo</label>
+            <input type="text" placeholder="Ingrese Correo">
+    
+            <label for="fec_nacimiento_cli">Fecha Nacimiento</label>
+            <input type="date" placeholder="Ingrese Fecha de Nacimiento">
+    
+            <label for="licencia_cli">Número Licencia</label>
+            <input type="text" placeholder="Ingrese Número Licencia">
+    
+            <label for="usuario_cli">Username</label>
+            <input type="text" placeholder="Ingrese Nickname">
+    
+            <label for="clave_cli">Password</label>
+            <input type="password" placeholder="Ingrese Password">
+          </div>
+        </div>
+        
         <input type="submit" (click)="register()" value="Registrar"> 
-   
+        <a href="#login">Regresar</a>
       </form>
     </div>
     </body>

@@ -13,6 +13,7 @@ import { AnclajeComponent } from "./components/anclaje/anclaje.component";
 import { LoginComponent } from "./components/login/login.component";
 import { RegisterComponent } from "./components/register/register.component";
 import { ResetPassComponent } from "./components/reset-pass/reset-pass.component";
+import { UserComponent } from "./components/user/user.component";
 
 const app_routes: Routes = [
   { path: 'nosotros', component: NosotrosComponent },
@@ -29,6 +30,7 @@ const app_routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent},
   { path: 'resetpass', component: ResetPassComponent},
+  { path: 'user', component: UserComponent},
  
   { path: '', pathMatch: 'full', redirectTo:'home'}
 ];

@@ -22,6 +22,7 @@ import { AnclajeComponent } from './components/anclaje/anclaje.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ResetPassComponent } from './components/reset-pass/reset-pass.component';
 import { LoginComponent } from './components/login/login.component';
+import { UserComponent } from './components/user/user.component';
 
 
 
@@ -40,7 +41,8 @@ import { LoginComponent } from './components/login/login.component';
     AnclajeComponent,
     RegisterComponent,
     ResetPassComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent
     
   ],
   imports: [

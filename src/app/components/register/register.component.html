@@ -11,33 +11,33 @@
         <div class="row">
           <div class="col-md-6">
             <label for="nom_cli">Nombre</label>
-            <input type="text" placeholder="Ingrese Nombre">
+            <input type="text" placeholder="Ingrese Nombre" [(ngModel)]="cliente.nom_cli" [ngModelOptions]="{standalone:true}">
 
             <label for="apepat_cli">Apellido Paterno</label>
-            <input type="text" placeholder="Ingrese Apellido Paterno">
+            <input type="text" placeholder="Ingrese Apellido Paterno" [(ngModel)]="cliente.apepat_cli" [ngModelOptions]="{standalone:true}">
 
             <label for="apemat_cli">Apellido Materno</label>
-            <input type="text" placeholder="Ingrese Apellido Materno">
+            <input type="text" placeholder="Ingrese Apellido Materno" [(ngModel)]="cliente.apemat_cli" [ngModelOptions]="{standalone:true}">
 
             <label for="dni_cli">DNI</label>
-            <input type="text" placeholder="Ingrese DNI">
+            <input type="text" placeholder="Ingrese DNI" [(ngModel)]="cliente.dni_cli" [ngModelOptions]="{standalone:true}">
           </div>
 
           <div class="col-md-6">
             <label for="correo_cli">Correo</label>
-            <input type="text" placeholder="Ingrese Correo">
+            <input type="text" placeholder="Ingrese Correo" [(ngModel)]="cliente.correo_cli" [ngModelOptions]="{standalone:true}">
     
             <label for="fec_nacimiento_cli">Fecha Nacimiento</label>
-            <input type="date" placeholder="Ingrese Fecha de Nacimiento">
+            <input type="date" placeholder="Ingrese Fecha de Nacimiento" [(ngModel)]="cliente.fec_nacimiento_cli" [ngModelOptions]="{standalone:true}">
     
             <label for="licencia_cli">Número Licencia</label>
-            <input type="text" placeholder="Ingrese Número Licencia">
+            <input type="text" placeholder="Ingrese Número Licencia" [(ngModel)]="cliente.licencia_cli" [ngModelOptions]="{standalone:true}">
     
             <label for="usuario_cli">Username</label>
-            <input type="text" placeholder="Ingrese Nickname">
+            <input type="text" placeholder="Ingrese Nickname" [(ngModel)]="cliente.usuario_cli" [ngModelOptions]="{standalone:true}">
     
             <label for="clave_cli">Password</label>
-            <input type="password" placeholder="Ingrese Password">
+            <input type="password" placeholder="Ingrese Password" [(ngModel)]="cliente.clave_cli" [ngModelOptions]="{standalone:true}">
           </div>
         </div>
         
@@ -46,3 +46,24 @@
       </form>
     </div>
     </body>
+
+
+    <!-- Alterta Resultado-->
+<div class="modal fade" id="AlertaRegistroCorrecto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Se Registró correctamente.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>

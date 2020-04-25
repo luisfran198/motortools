@@ -4,10 +4,10 @@
       <h1>Login</h1>
       <form>
         <label for="username">Username</label>
-        <input type="text" placeholder="Enter username">
+        <input type="text" placeholder="Enter username" [(ngModel)]="cliente.usuario_cli" [ngModelOptions]="{standalone:true}">
    
         <label for="password">Password</label>
-        <input type="password" placeholder="Enter password">
+        <input type="password" placeholder="Enter password" [(ngModel)]="cliente.clave_cli" [ngModelOptions]="{standalone:true}">
    
         <input type="submit" (click)="login()" value="Ingresar"> 
    
